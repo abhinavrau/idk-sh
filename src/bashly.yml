@@ -1,0 +1,18 @@
+name: wish
+help: Shell command generator using on Natural Language Input using Google's code-bison model
+version: 0.1.0
+
+environment_variables:
+- name: project_id
+  required: true
+  help: GCP Project where  codey API is enabled and available
+- name: location_id
+  required: true
+  help: GCP Region to use for the  codey API
+
+catch_all:
+  label: query
+  help: natural language query to build the shell command
+
+
+
