@@ -16,9 +16,9 @@ gumInstalled=$(which gum)
 
 # Execute the wish script
 if [ -z "$gumInstalled" ]; then  
-    gum spin --spinner globe --title "Creating your wish..." --show-output -- "$DIR/wish" "$@" > "$TMP_FILE"
+    gum spin --spinner globe --title "Generating..." --show-output -- "$DIR/idk" "$@" > "$TMP_FILE"
 else 
-    "$DIR/wish" "$@" > "$TMP_FILE"
+    "$DIR/idk" "$@" > "$TMP_FILE"
 fi
 
 # Read the command to be placed on the Zsh command line

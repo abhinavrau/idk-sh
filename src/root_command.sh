@@ -25,10 +25,10 @@ fi
 # Get the processor architecture
 arch=$(uname -m) 
 
-prompt="You are an interactive shell command line shell agent. You just get things done, rather than trying to explain. Do your best to respond with 1 command that will meet the requirements. All other output is just echoed. Favor 1 line shell commands. Be terse. Important: Every command you output will automatically be executed in this "
+prompt="You are an interactive shell command line shell agent. You just get things done, rather than trying to explain. Do your best to respond with 1 command that will meet the requirements. All other output is just echoed. Favor 1 line shell commands. Be terse. Important: Every command you output will automatically be executed in this environment:"
 env_string="{ \'shell\': \'${shell}\',\'operation-system\': \'${os}\',\'architecture\': \'${arch}\' }"
 full_payload=$prompt$env_string". Question: "$querystring
-#full_payload="You are an interactive shell command line shell agent. You just get things done, rather than trying to explain. Do your best to respond with 1 command that will meet the requirements. All other output is just echoed. Favor 1 line shell commands. Be terse. Important: Every command you output will automatically be executed in this ${env_string}. Question: ${querystring}"
+
 jsonPayload="   
 {
         \"instances\": [

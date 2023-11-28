@@ -1,5 +1,5 @@
-name: wish
-help: Shell command generator using on Natural Language Input using Google's code-bison model
+name: idk
+help: Generate shell commands based on natural language
 version: 0.1.0
 
 environment_variables:
